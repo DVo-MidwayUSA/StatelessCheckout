@@ -10,6 +10,14 @@
 
     };
 
+    DataService.prototype.readLocalCart = function () {
+
+    };
+
+    DataService.prototype.readServerCart = function () {
+
+    };
+
     return DataService;
 
 }());

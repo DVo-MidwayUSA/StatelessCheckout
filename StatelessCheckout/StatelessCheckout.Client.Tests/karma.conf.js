@@ -15,10 +15,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-        '../StatelessCheckout.Client/app/*.js',
-        '../StatelessCheckout.Client/app/**/*.js',
-        'tests/*.js',
-        'tests/**/*.js'
+        '../StatelessCheckout.Client/app/lib/*.js',
+        '../StatelessCheckout.Client/app/app.js',
+        '../StatelessCheckout.Client/app/components/*.js',
+        '*tests/**/*.js',
+        '*tests/**/**/*.js'
     ],
 
 

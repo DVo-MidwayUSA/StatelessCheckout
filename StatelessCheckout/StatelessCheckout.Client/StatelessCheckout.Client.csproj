@@ -66,10 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\cart-model.js" />
-    <Content Include="app\cart-service.js" />
-    <Content Include="app\data-service.js" />
+    <Content Include="app\components\cart-model.js" />
+    <Content Include="app\components\cart-service.js" />
+    <Content Include="app\components\data-service.js" />
+    <Content Include="app\app.js" />
+    <Content Include="app\lib\jquery.js" />
     <Content Include="packages.config" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

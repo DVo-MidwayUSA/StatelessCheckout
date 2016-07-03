@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{EC17CCD3-6E00-4E28-8AE2-75A1BA57A248}</ProjectGuid>
+    <ProjectGuid>{5DAA44BF-D26F-4DEE-961A-736A055F1DB3}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StatelessCheckout.Client.Tests</RootNamespace>
-    <AssemblyName>StatelessCheckout.Client.Tests</AssemblyName>
+    <RootNamespace>StatelessCheckout.Plugin</RootNamespace>
+    <AssemblyName>StatelessCheckout.Plugin</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -66,9 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="integration-tests\data-service-tests\create-cart.js" />
     <Content Include="packages.config" />
-    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -77,16 +75,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="karma.conf.js" />
-    <Content Include="unit-tests\cart-service-tests\get-cart-tests\cart-does-not-exist.js" />
-    <Content Include="unit-tests\cart-service-tests\get-cart-tests\cart-exists-locally.js" />
-    <Content Include="unit-tests\cart-service-tests\get-cart-tests\cart-exists-server-side-and-not-locally.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -100,9 +93,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53194</DevelopmentServerPort>
+          <DevelopmentServerPort>57259</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:53194/</IISUrl>
+          <IISUrl>http://localhost:57259/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
