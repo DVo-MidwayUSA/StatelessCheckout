@@ -1,20 +1,4 @@
-﻿//(function () {
-
-//    'use strict';
-
-//    var config = {
-
-//        get apiBaseUrl() { return 'http://example.com'; }
-
-//    };
-
-//    window.config = config;
-
-
-
-//}());
-
-var App = (function () {
+﻿var App = (function () {
 
     function App(options) {
 
@@ -39,6 +23,3 @@ var App = (function () {
     return App;
 
 }());
-
-new App({ apiBaseUrl: 'hello'});
-

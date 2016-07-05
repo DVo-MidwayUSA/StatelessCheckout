@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Sat Jul 02 2016 23:36:01 GMT-0500 (Central Daylight Time)
+// Generated on Sun Jul 03 2016 09:30:21 GMT-0500 (Central Daylight Time)
 
 module.exports = function (config) {
     config.set({
@@ -10,14 +10,13 @@ module.exports = function (config) {
 
         // frameworks to use
         // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-        frameworks: ['jasmine'],
+        frameworks: ['jasmine-jquery', 'jasmine'],
 
 
         // list of files / patterns to load in the browser
         files: [
-            '../StatelessCheckout.Client/app/lib/*.js',
-            '../StatelessCheckout.Client/app/app.js',
-            '../StatelessCheckout.Client/app/components/*.js',
+            '../StatelessCheckout.Plugin/jquery.js',
+            '../StatelessCheckout.Plugin/jquery.add-to-cart.js',
             '*tests/*.js'
         ],
 
