@@ -8,9 +8,7 @@
 
         sku = 'sku',
 
-        url = 'url';
-
-        sut = new AddToCart(null, sku, { apiBaseUrl: url });
+        sut = new AddToCart(null, sku);
 
     });
 
@@ -20,12 +18,7 @@
 
         sut.init();
 
-        expect($.ajax).toHaveBeenCalledWith({
-            data: { sku: sku },
-            url: url,
-            success: sut.renderAddToCartButton,
-            error: sut.renderDealerButton
-        });
+        expect($.ajax).toHaveBeenCalledWith(jasmine.objectContaining({ data: { sku: sku } }));
 
     });
 

@@ -2,21 +2,11 @@
 
     'use strict';
 
-    var sut, sku, url;
-
-    beforeEach(function () {
-
-        sku = 'sku',
-
-        url = 'url';
+    it('Should call init when add to cart class is instantiated', function () {
 
         spyOn(AddToCart.prototype, 'init').and.callThrough();
 
-        sut = new AddToCart();
-
-    });
-
-    it('Should call init when add to cart class is instantiated', function () {
+        var sut = new AddToCart();
 
         expect(AddToCart.prototype.init).toHaveBeenCalled();
 

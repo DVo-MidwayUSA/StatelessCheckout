@@ -66,6 +66,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="integration-tests\add-to-cart-button-tests.js" />
+    <Content Include="integration-tests\dealer-button-tests.js" />
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <None Include="Web.Debug.config">

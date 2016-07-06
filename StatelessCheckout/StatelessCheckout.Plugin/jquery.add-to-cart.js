@@ -4,6 +4,8 @@
 
     function AddToCart(element, sku, options) {
 
+        this.$element = $(element);
+
         this.sku = sku;
 
         this.settings = $.extend({
@@ -20,17 +22,22 @@
         $.ajax({
             url: this.settings.apiBaseUrl,
             data: { sku: this.sku },
-            success: this.renderAddToCartButton,
-            error: this.renderDealerButton
+            type: 'post',
+            success: (data) => this.renderAddToCartButton(this, data),
+            error: (data) => this.renderDealerButton(this, data)
         });
 
     };
 
-    AddToCart.prototype.renderAddToCartButton = function () {
+    AddToCart.prototype.renderAddToCartButton = function (self, data) {
+
+        self.$element.html('<button>Add to Cart</button><input type="number" value="1" />');
 
     };
 
-    AddToCart.prototype.renderDealerButton = function () {
+    AddToCart.prototype.renderDealerButton = function (self, data) {
+
+        self.$element.html('<button>Locate Dealer</button>');
 
     };
 
